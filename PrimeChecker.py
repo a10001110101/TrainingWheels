@@ -25,7 +25,7 @@ driver.get('https://primenow.amazon.com/storefront?merchantId=A3IO9LEFI6UFLL&ref
 status1 = driver.find_element_by_id('nawMessageBox')
 print(status1.text +" "+"Amazon")
 
-time.sleep(1)
+time.sleep(2)
 
 #Whole Foods
 driver.get('https://primenow.amazon.com/storefront?merchantId=A2CY28O5K7ISXT&ref_=pn_sf_nav_sbs_1_A2CY28O5K7ISXT')
@@ -33,7 +33,7 @@ driver.get('https://primenow.amazon.com/storefront?merchantId=A2CY28O5K7ISXT&ref
 status2 = driver.find_element_by_id('nawMessageBox')
 print(status2.text +" "+"Whole Foods")
 
-time.sleep(1)
+time.sleep(2)
 
 #Bartells
 driver.get('https://primenow.amazon.com/storefront?merchantId=A3H17T0B4V7RDA&ref_=pn_sf_nav_sbs_3_A3H17T0B4V7RDA')
@@ -41,6 +41,6 @@ driver.get('https://primenow.amazon.com/storefront?merchantId=A3H17T0B4V7RDA&ref
 status3 = driver.find_element_by_id('nawMessageBox')
 print(status3.text +" "+"Bartells")
 
-time.sleep(1)
+time.sleep(2)
 
 driver.quit()
