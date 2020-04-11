@@ -1,5 +1,6 @@
 #Toberdyne Industries April 2020
 #toberdyne.net
+#ver1.2
 
 import time
 from selenium import webdriver
