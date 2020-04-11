@@ -22,25 +22,32 @@ time.sleep(1)
 #Amazon
 driver.get('https://primenow.amazon.com/storefront?merchantId=A3IO9LEFI6UFLL&ref_=pn_sf_nav_sbs_2_A3IO9LEFI6UFLL')
 
-status1 = driver.find_element_by_id('nawMessageBox')
-print(status1.text +" "+"Amazon")
-
+try:
+  status1 = driver.find_element_by_id('nawMessageBox')
+  print(status1.text +" "+"Amazon")
+except:
+  print("Unknown delivery time - please try script again later")
+  
 time.sleep(2)
 
 #Whole Foods
 driver.get('https://primenow.amazon.com/storefront?merchantId=A2CY28O5K7ISXT&ref_=pn_sf_nav_sbs_1_A2CY28O5K7ISXT')
 
-status2 = driver.find_element_by_id('nawMessageBox')
-print(status2.text +" "+"Whole Foods")
-
+try:
+  status2 = driver.find_element_by_id('nawMessageBox')
+  print(status2.text +" "+"Whole Foods")
+except:
+  print("Unknown delivery time - please try script again later")
+  
 time.sleep(2)
 
 #Bartells
 driver.get('https://primenow.amazon.com/storefront?merchantId=A3H17T0B4V7RDA&ref_=pn_sf_nav_sbs_3_A3H17T0B4V7RDA')
 
-status3 = driver.find_element_by_id('nawMessageBox')
-print(status3.text +" "+"Bartells")
-
-time.sleep(2)
-
+try:
+  status3 = driver.find_element_by_id('nawMessageBox')
+  print(status3.text +" "+"Bartells")
+except:
+  print("Unknown delivery time - please try script again later")
+  
 driver.quit()
